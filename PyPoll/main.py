@@ -36,8 +36,7 @@ candidates = ["Khan", "Correy", "Li","O'Tooley"]
 votes = [khan_votes, correy_votes,li_votes,otooley_votes]
 
 cand_and_votes = dict(zip(candidates,votes))
-key = max(cand_and_votes, key=cand_and_votes.get)
-
+key = max(cand_and_votes, key = lambda k: cand_and_votes[k])
 
 khan_percent = (khan_votes/tot_votes) *100
 correy_percent = (correy_votes/tot_votes) * 100
@@ -45,6 +44,8 @@ li_percent = (li_votes/tot_votes)* 100
 otooley_percent = (otooley_votes/tot_votes) * 100
 
 # Print the summary table
+#print(cand_and_votes)
+#print(key)
 print(f"Election Results")
 print(f"----------------------------")
 print(f"Total Votes: {tot_votes}")
