@@ -64,6 +64,8 @@ output_file = os.path.join("Final Summary.txt")
 with open(output_file,"w") as file:
 
 # Write methods to print to Elections_Results_Summary 
+    file.write(f"Homework 3")
+    file.write("\n")
     file.write(f"Election Results")
     file.write("\n")
     file.write(f"----------------------------")
